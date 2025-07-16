@@ -10,7 +10,9 @@ Includes WPM tracking, mistake counting, leaderboard, and responsive design.
 - MonkeyType-inspired vibe
 
 ## Screenshots
-![screenshot](Screenshot.png)
+
+![Typing Speed Test Preview](Screenshot.png)
+
 
 🔗 [Try it Live](https://yourusername.github.io/TypeRush)
 
