@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TypeRush</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1 id="logo">TypeRush</h1>
+      <div class="controls">
+        <select id="mode">
+          <option value="paragraph">Paragraph Mode</option>
+          <option value="30">Countdown: 30s</option>
+          <option value="60">Countdown: 60s</option>
+        </select>
+      </div>
+    </header>
+
+    <div id="quoteDisplay"></div>
+    <textarea id="quoteInput" placeholder="Start typing here..."></textarea>
+
+    <div class="stats">
+      <p>Time: <span id="time">0</span>s</p>
+      <p>WPM: <span id="wpm">0</span></p>
+      <p>Accuracy: <span id="accuracy">0%</span></p>
+      <p>Mistakes: <span id="mistakes">0</span></p>
+    </div>
+
+    <button id="restart">Restart</button>
+
+    <section id="leaderboard">
+      <h3>Leaderboard</h3>
+      <ul id="leaderboardList"></ul>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

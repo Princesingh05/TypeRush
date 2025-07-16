@@ -1,0 +1,146 @@
+/* === Base Styles === */
+body {
+  margin: 0;
+  padding: 20px;
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+  background-color: #1e1e1e; /* dark gray */
+  color: #e0e0e0;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  min-height: 100vh;
+}
+
+/* === Container === */
+.container {
+  max-width: 700px;
+  width: 100%;
+  background-color: #2a2a2a; /* darker gray */
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+/* === Heading === */
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  color: #ffd60a;
+  margin-bottom: 20px;
+}
+
+/* === Controls === */
+.controls {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+select,
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+select {
+  background-color: #3a3a3a;
+  color: #fff;
+}
+
+button {
+  background-color: #ffd60a;
+  color: #000;
+}
+
+button:hover {
+  background-color: #ffcf00;
+}
+
+/* === Quote Display === */
+#quoteDisplay {
+  font-size: 20px;
+  line-height: 1.6;
+  background-color: #1e1e1e;
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid #3a3a3a;
+  user-select: none;
+  margin-bottom: 15px;
+}
+
+/* === Highlight Typed Characters === */
+#quoteDisplay span.correct {
+  color: #ffd60a;
+}
+
+#quoteDisplay span.incorrect {
+  background-color: rgba(255, 0, 0, 0.2);
+  color: #ffbdbd;
+}
+
+/* === Typing Input === */
+textarea {
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 5px;
+  background-color: #3a3a3a;
+  color: #ffffff;
+  border: 1px solid #555;
+  resize: none;
+  outline: none;
+  margin-bottom: 20px;
+}
+
+/* === Stats === */
+.stats {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+/* === Leaderboard === */
+#leaderboard {
+  margin-top: 25px;
+}
+
+#leaderboard h3 {
+  color: #ffd60a;
+}
+
+#leaderboard ul {
+  padding-left: 20px;
+}
+
+#leaderboard li {
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+#logo {
+    font-family: 'Orbitron', 'Segoe UI', sans-serif;
+    font-size: 2.5rem;
+    text-align: center;
+    color: #ffd60a;
+    letter-spacing: 2px;
+    text-shadow:  0 0 5px #ffd60a, 0 0 15px #ffd60a40;
+    margin-bottom: 30px;
+}
+
+/* === Responsive === */
+@media (max-width: 600px) {
+  .controls,
+  .stats {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
