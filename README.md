@@ -14,7 +14,7 @@ Includes WPM tracking, mistake counting, leaderboard, and responsive design.
 ![Typing Speed Test Preview](Screenshot.png.png)
 
 ## Try
-🔗 [Try it Live](https://yourusername.github.io/TypeRush)
+🔗 [Try it Live](https://princesingh05.github.io/TypeRush/)
 
 ## Built with
 - HTML
